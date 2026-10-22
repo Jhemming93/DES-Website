@@ -19,8 +19,16 @@ export interface Sponsor {
   image: string
   description: string
   link?: string
-  category: 'terabyte' | 'byte' | 'bit'
+  isPast?: boolean
+  badges: (
+    | 'Community Partner'
+    | 'Venue Partner'
+    | 'Knowledge Partner'
+    | 'Talent & Career Partner'
+    | 'Operations Partner'
+  )[]
 }
+
 
 // Interfaces for contributor page.
 export interface UserPermissions {
